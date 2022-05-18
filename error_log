@@ -1,0 +1,8 @@
+[13-May-2022 21:20:25 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.2.34. in /home/amarumco/public_html/vendor/composer/platform_check.php on line 24
+[13-May-2022 21:29:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'amarumco_db.languages' doesn't exist in /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:368
+Stack trace:
+#0 /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(368): PDO->prepare('select * from `...')
+#1 /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(705): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#2 /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(672): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(376): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builde in /home/amarumco/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 712
